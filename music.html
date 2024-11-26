@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('background.jpg'); /* Path ke gambar */
+            background-size: cover; /* Agar gambar memenuhi seluruh layar */
+            background-repeat: no-repeat; /* Mencegah gambar terulang */
+            background-position: center; /* Posisikan gambar di tengah */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .audio-card {
+            background-color: #f0cbe7;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            gap: 15px;
+        }
+
+        .audio-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .audio-info {
+            color: #fefefe;
+        }
+
+        .audio-info h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .audio-info p {
+            margin: 5px 0 10px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        audio {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-card">
+        <!-- Gambar Album -->
+        <img src="album-cover.jpg" alt="Album Cover">
+
+        <!-- Informasi Lagu -->
+        <div class="audio-info">
+            <h3>Wish You Were Here</h3>
+            <p>Neck Deep</p>
+            
+            <!-- Audio Player -->
+            <audio controls>
+                <source src="lagu-contoh.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung pemutar audio.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
+
