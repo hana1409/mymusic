@@ -8,11 +8,14 @@
         body {
            margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #ffa8f2; /* Warna hijau */
+            background-image: url('gambar/loopy.jpg'); /* Path ke gambar */
+            background-size: cover; /* Agar gambar memenuhi seluruh layar */
+            background-repeat: no-repeat; /* Mencegah gambar terulang */
+            background-position: center; /* Posisikan gambar di tengah */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
         .audio-card {
@@ -23,6 +26,7 @@
             align-items: center;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
             gap: 15px;
+            margin: 0;
         }
         .container {
             display: flex;
